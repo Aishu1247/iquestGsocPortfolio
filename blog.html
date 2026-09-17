@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Innovators Quest</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header style="position: sticky; top: 0; z-index: 10; background-color: var(--space-cadet); box-shadow: var(--shadow); padding-block: 18px;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="./index.html"><h1 class="logo">Innovators Quest</h1></a>
+      <a href="./index.htm" class="back-link" data-back>&larr; Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section blog blog-page">
+      <div class="container">
+
+        <p class="section-subtitle">Blog</p>
+        <h2 class="h2 section-title">Notes on Testing &amp; Building</h2>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="testing">Testing</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+        </div>
+
+        <ul class="blog-list">
+
+          <li class="blog-card" data-category="testing">
+            <div class="card-banner">
+              <a href="#"><img src="./images/blog-1.jpg" width="1181" height="843" loading="lazy" alt="Automated testing" class="img-cover"></a>
+            </div>
+            <p class="card-tag">Testing</p>
+            <h3 class="h3 card-title"><a href="#">Why Automated Tests Pay Off</a></h3>
+            <p class="card-excerpt">A solid regression suite catches breakage before your users do.</p>
+            <p class="card-more" hidden>With Playwright and pytest you can turn a flaky manual checklist into a fast, repeatable pipeline that runs on every commit.</p>
+            <button class="btn-readmore" data-readmore>Read more</button>
+          </li>
+
+          <li class="blog-card" data-category="fullstack">
+            <div class="card-banner">
+              <a href="#"><img src="./images/blog-2x.jpg" width="1180" height="843" loading="lazy" alt="MERN stack" class="img-cover"></a>
+            </div>
+            <p class="card-tag">Full Stack</p>
+            <h3 class="h3 card-title"><a href="#">Structuring a MERN App</a></h3>
+            <p class="card-excerpt">Keep your API, data layer and UI concerns cleanly separated.</p>
+            <p class="card-more" hidden>A predictable folder structure and thin controllers make a Node + Express + MongoDB backend far easier to test and extend.</p>
+            <button class="btn-readmore" data-readmore>Read more</button>
+          </li>
+
+          <li class="blog-card" data-category="ai">
+            <div class="card-banner">
+              <a href="#"><img src="./images/blog-3.jpg" width="1180" height="843" loading="lazy" alt="LLM tooling" class="img-cover"></a>
+            </div>
+            <p class="card-tag">AI</p>
+            <h3 class="h3 card-title"><a href="#">Adding an LLM to Your Workflow</a></h3>
+            <p class="card-excerpt">LLMs are great at reviewing diffs and drafting test plans.</p>
+            <p class="card-more" hidden>Feeding a pull request's diff to a model and asking for edge cases is a cheap way to catch bugs a human reviewer might skim past.</p>
+            <button class="btn-readmore" data-readmore>Read more</button>
+          </li>
+
+        </ul>
+
+        <section class="newsletter">
+          <h2 class="h2">Get new posts by email</h2>
+          <p>No spam - just the occasional write-up on QA and full-stack work.</p>
+          <form class="newsletter-form" data-newsletter>
+            <input type="email" class="newsletter-input" placeholder="you@example.com" aria-label="Email address">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          <p class="newsletter-msg" data-msg></p>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        &copy; <span data-year>2026</span> <a href="./index.html" class="copyright-link">Innovators Quest</a>. All Rights Reserved
+      </p>
+      <ul class="footer-list">
+        <li><a href="./index.html" class="footer-link">Home</a></li>
+        <li><a href="./blog.html" class="footer-link">Blog</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./blog.js"></script>
+
+</body>
+
+</html>
