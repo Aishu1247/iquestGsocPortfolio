@@ -1,4 +1,4 @@
-# 🐛 Wanna Crack GSoC - Bug Hunt (Level 2)
+# 🐛 Wanna Crack GSoC 3.0 - Bug Hunt
 
 Welcome! This is a small, real-world portfolio website built with plain **HTML + CSS + JavaScript**
 across **two pages**: the main portfolio (`index.html`) and a **Blog** page (`blog.html`).
